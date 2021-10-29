@@ -1,0 +1,76 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    background-color: burlywood;
+    margin: auto;
+}
+/*block*/
+
+.col{
+    width: 25%;
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    background-color: lime;
+    float: left;
+}
+
+
+.col:nth-child(2), .col:nth-child(4) {
+    background-color: aqua;
+}
+
+@media screen and (max-width: 1000px){
+    .col {
+        width: 50%;
+    }
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+@media screen and (max-width: 500px){
+    .col{
+        width: 100%;
+    }
+}
+/*menu*/
+.menu{
+
+    list-style-type:circle;
+    clear: left;
+}
+.menu2{
+    float: right;
+}
+.menu li{
+    float: left;
+}
+
+.menu a, .menu2 a{
+    text-decoration: none;
+    padding: 27px;
+    color: turquoise;
+    background-color: black;
+}
+
+.menu a:hover, .menu2 a:hover{
+    color: tomato;
+    background-color: blueviolet;
+    
+}
+
+/*Tutup Float Left*/
+.tajuk{
+    clear: both;
+    padding-top: 20px;
+}
+
+.mula{
+    clear: both;
+}
